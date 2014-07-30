@@ -13,7 +13,7 @@
 @interface CharacterTests : XCTestCase
 {
     NSDictionary * _characterDetailJson;
-    Character * _testGuy;
+//    Character * _testGuy;
 }
 
 @end
