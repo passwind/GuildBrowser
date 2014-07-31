@@ -13,7 +13,7 @@
 @interface CharacterTests : XCTestCase
 {
     NSDictionary * _characterDetailJson;
-//    Character * _testGuy;
+    Character * _testGuy;
 }
 
 @end
@@ -32,11 +32,15 @@
     XCTAssertNotNil(json, @"invalid test data");
     
     _characterDetailJson=json;
+    
+    _testGuy=[[Character alloc] initWithCharacterDetailData:_characterDetailJson];
 }
 
 - (void)tearDown
 {
     _characterDetailJson=nil;
+    
+    _testGuy=nil;
     
     [super tearDown];
 }

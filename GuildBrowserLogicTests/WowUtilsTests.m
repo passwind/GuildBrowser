@@ -45,8 +45,6 @@
 
 -(void)testQualityLookup
 {
-    NSLog(@"%@",[WoWUtils qualityFromQualityType:1]);
-    
     XCTAssertEqual(@"Grey", [WoWUtils qualityFromQualityType:1], @"");
     XCTAssertFalse([@"Purple" isEqualToString:[WoWUtils qualityFromQualityType:10]], @"");
 }
